@@ -39,6 +39,8 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     margin-bottom: 10px;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
@@ -54,6 +56,7 @@ aside {
     background-color: white;
     color: black;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -62,9 +65,24 @@ aside img {
     margin: 10px 0;
 }
 
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
+
 footer {
     margin-top: 1em;
     border-top: 1px solid blue;
     text-align: center;
     padding-top: 10px;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
