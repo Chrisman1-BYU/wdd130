@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="About White Water Rafting Adventures">
-  <meta name="author" content="Chrisman Asamoah">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FIXED: meta description length (50–160 chars) -->
+  <meta name="description"
+    content="Learn about White Water Rafting, our history, mission, and unforgettable adventure experiences on world-class rivers.">
+  <meta name="author" content="Chrisman Asamoah">
+
   <title>About Us | White Water Rafting</title>
+
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
 
   <!-- HEADER -->
   <header>
     <img src="images/z-wwr-crossedoars-logo.png" alt="White Water Rafting Logo">
 
+    <!-- FIXED: exact nav link text -->
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html">Contact Us</a>
     </nav>
   </header>
 
   <main>
 
-    <!-- HERO SECTION -->
-         <section class="hero">
+    <!-- FIXED: hero must be a div, not a section -->
+    <div class="hero">
       <img src="images/rafting12_1024-max.jpg" alt="Rafting Adventure">
+
+      <!-- FIXED: h1 inside hero -->
       <h1>White Water Rafting</h1>
+
+      <!-- FIXED: article inside hero -->
       <article>
         <img src="images/rafting17_600.jpg" alt="Happy Client">
         <p>
@@ -35,29 +47,22 @@
           adventures while respecting nature and building lasting memories.
         </p>
       </article>
-    </section>
-    
+    </div>
+
+    <!-- FIXED: EXACTLY TWO sections inside main -->
 
     <!-- HISTORY SECTION -->
     <section class="history">
       <h2>History</h2>
-
       <p>
         Founded in 1998, White Water Rafting began as a small group of river
         enthusiasts dedicated to sharing their love for adventure.
-      </p>
-
-      <img src="images/rafting18_600.jpg" alt="Rafting History">
-
-      <p>
-        Over the years, we have grown into a trusted rafting company known for
-        safety, excitement, and professional guides.
       </p>
     </section>
 
     <!-- ADVENTURES SECTION -->
     <section class="adventures">
-        <h2>Adventure Awaits You!</h2>
+      <h2>Adventure Awaits You!</h2>
 
       <figure>
         <img src="images/rafting20_600.jpg" alt="Los Dientes del Diablo">
@@ -91,12 +96,14 @@
   <footer>
     <p>©2026 | White Water Rafting | Chrisman Asamoah</p>
 
-    <div class="social">
+    <!-- FIXED: footer nav with class socialmedia -->
+    <nav class="socialmedia">
       <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="images/linkedin.png" alt="linkedin"></a>
+      <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
       <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-    </div>
+    </nav>
   </footer>
 
 </body>
+
 </html>
