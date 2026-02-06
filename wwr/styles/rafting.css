@@ -28,6 +28,7 @@ header {
   align-items: center;
   background-color: var(--primary-color);
   padding: 1rem;
+  color: var(--light-color);
 }
 
 header img {
@@ -48,58 +49,13 @@ nav a {
   font-weight: bold;
 }
 
-/* ================= CONTACT PAGE ================= */
-.contact-page {
-  padding: 2rem;
-}
-
-.company-info iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-  margin-top: 1rem;
-}
-
-.employees {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.employees figure {
-  text-align: center;
-}
-
-.employees img {
-  width: 150px;
-  border-radius: 8px;
-}
-
-.contact-form form {
-  display: grid;
-  gap: 1rem;
-}
-
-button[type="submit"] {
-  background-color: var(--primary-color);
-  color: var(--light-color);
-  padding: 0.75rem;
-  border: none;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  opacity: 0.9;
-}
-
 /* FOOTER */
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--light-color);
   padding: 1rem;
 }
 
@@ -114,4 +70,60 @@ footer {
 
 .socialmedia img {
   width: 30px;
+}
+
+/* ================= CONTACT PAGE ================= */
+.contact-page {
+  padding: 2rem;
+}
+
+.company-info {
+  margin-bottom: 2rem;
+}
+
+.company-info iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-top: 1rem;
+}
+
+.employees {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.employees figure {
+  text-align: center;
+}
+
+.employees img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+fieldset {
+  padding: 1rem;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.9;
 }
