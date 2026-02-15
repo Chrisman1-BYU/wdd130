@@ -4,126 +4,125 @@
   box-sizing: border-box;
 }
 
-/* ROOT VARIABLES */
-:root {
-  --primary-color: #0b3c5d;
-  --light-color: #ffffff;
-  --body-font: Arial, Helvetica, sans-serif;
-}
-
-/* GLOBAL */
 body {
-  font-family: var(--body-font);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
-h1,
-h2 {
-  text-align: center;
-}
-
-/* HEADER (GRID) */
 header {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  align-items: center;
-  background-color: var(--primary-color);
-  padding: 1rem;
-  color: var(--light-color);
-}
-
-header img {
-  width: 120px;
-}
-
-/* NAV (FLEX) */
-nav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1.5rem;
-}
-
-
-nav a {
-  color: var(--light-color);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* FOOTER */
-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-color);
-  color: var(--light-color);
+  padding: 1rem;
+  background: #003049;
+}
+
+header img {
+  width: 100px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.hero h1 {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background: rgba(0,0,0,0.6);
   padding: 1rem;
 }
 
-.socialmedia {
-  display: flex;
-  gap: 1rem;
-}
-
-.socialmedia a {
-  text-decoration: none;
-}
-
-.socialmedia img {
-  width: 30px;
-}
-
-/* ================= CONTACT PAGE ================= */
-.contact-page {
+.cta {
+  text-align: center;
   padding: 2rem;
+  background: #eae2b7;
 }
 
-.company-info {
-  margin-bottom: 2rem;
-}
-
-.company-info iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #d62828;
+  color: white;
+  text-decoration: none;
   margin-top: 1rem;
 }
 
-.employees {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
-}
-
-.employees figure {
+.newsletter {
+  padding: 2rem;
   text-align: center;
 }
 
-.employees img {
-  width: 150px;
-  border-radius: 8px;
-}
-
-.contact-form form {
+.newsletter form {
   display: grid;
   gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 400px;
+  margin: auto;
 }
 
-fieldset {
-  padding: 1rem;
+.grid-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
 }
 
-button[type="submit"] {
-  background-color: var(--primary-color);
-  color: var(--light-color);
+.grid-content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.trip img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-table {
+  padding: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
   padding: 0.75rem;
-  border: none;
-  cursor: pointer;
+  text-align: center;
 }
 
-button[type="submit"]:hover {
-  opacity: 0.9;
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #003049;
+  color: white;
+  margin-top: 2rem;
 }
